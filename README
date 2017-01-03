@@ -1,0 +1,15 @@
+pyFarnell - access Farnell information using Farnell REST API
+
+Install:
+
+    pip install pyFarnell
+
+Use example:
+
+    #!/usr/bin/python
+    from pprint import pprint
+    import pyFarnell.pyFarnell as pyFarnell
+
+    # the following is a Farnell API key
+    f = pyFarnell.Farnell('asdfghjklusditmeshdoctis')
+    pprint(f.get_part_number('2507703'))
