@@ -1,10 +1,12 @@
-pyFarnell - access Farnell information using Farnell REST API
+# pyFarnell - access Farnell information using Farnell REST API
 
-Install:
+[![Documentation Status](https://readthedocs.org/projects/pyfarnell/badge/?version=latest)](http://pyfarnell.readthedocs.io/en/latest/?badge=latest)
+
+## Install
 
     pip install pyFarnell
 
-Use example:
+## Use example
 
     #!/usr/bin/python
     from pprint import pprint
