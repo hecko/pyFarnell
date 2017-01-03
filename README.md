@@ -10,7 +10,7 @@
 
     #!/usr/bin/python
     from pprint import pprint
-    import pyFarnell.pyFarnell as pyFarnell
+    import pyFarnell
 
     # the following is a Farnell API key
     f = pyFarnell.Farnell('asdfghjklusditmeshdoctis')

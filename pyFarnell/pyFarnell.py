@@ -1,6 +1,7 @@
 import requests
 
 class Farnell():
+    """Setup Farnell API session"""
 
     def __init__(self, apiKey):
         self.apiKey = apiKey
