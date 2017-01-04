@@ -1,9 +1,17 @@
 import requests
 
 class Farnell():
-    """Setup Farnell API session"""
+    def __init__(self, apiKey = ''):
+        """Setup Farnell API session
 
-    def __init__(self, apiKey):
+        :param apiKey: Farnells Product Search API apiKey    
+        :type apiKey: str
+
+        """
+
+        if not apiKey:
+            raise Exception("Contact Farnell representative to create an accout for \'Product Search API: Standard' product for you.")
+        
         self.apiKey = apiKey
         self.base_url = 'https://api.element14.com/catalog/products'
 
@@ -17,5 +25,5 @@ class Farnell():
                  }
         r = requests.get(self.base_url, params = params)
         if r.status_code != 200:
-            raise Exception("Developer apiKey not active - contact Farnell representative.")
+            raise Exception("Developer apiKey not active - contact Farnell representative to activate account for \'Product Search API: Standard' product - API key " + str(self.apiKey))
         return r.__dict__
