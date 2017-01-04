@@ -18,4 +18,4 @@
 
 ## Full documentation
 
-    [http://pyfarnell.readthedocs.io]
+http://pyfarnell.readthedocs.io
