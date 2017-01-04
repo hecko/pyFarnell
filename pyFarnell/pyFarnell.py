@@ -1,14 +1,14 @@
 import requests
 
 class Farnell():
+    """Setup Farnell API session
+
+    :param apiKey: Farnells Product Search API apiKey    
+    :type apiKey: str
+
+    """
+
     def __init__(self, apiKey = ''):
-        """Setup Farnell API session
-
-        :param apiKey: Farnells Product Search API apiKey    
-        :type apiKey: str
-
-        """
-
         if not apiKey:
             raise Exception("Contact Farnell representative to create an accout for \'Product Search API: Standard' product for you.")
         
