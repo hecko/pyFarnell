@@ -15,3 +15,7 @@
     # the following is a Farnell API key
     f = pyFarnell.Farnell('asdfghjklusditmeshdoctis')
     pprint(f.get_part_number('2507703'))
+
+## Full documentation
+
+    [http://pyfarnell.readthedocs.io]
