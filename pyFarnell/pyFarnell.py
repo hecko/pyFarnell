@@ -20,6 +20,8 @@ class Farnell():
 
         :param partNum: Farnells part order number
         :type partNum: str
+        :return: product information dictionay
+        :rtype: dict
 
         """
 
