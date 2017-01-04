@@ -16,7 +16,13 @@ class Farnell():
         self.base_url = 'https://api.element14.com/catalog/products'
 
     def get_part_number(self, partNum):
-        """Gets part information where **partNum** is Farnell's product ID"""
+        """Gets part information
+
+        :param partNum: Farnells part order number
+        :type partNum: str
+
+        """
+
         params = {
                    'callInfo.responseDataFormat': 'JSON',
                    'term': 'id:' + str(partNum),
