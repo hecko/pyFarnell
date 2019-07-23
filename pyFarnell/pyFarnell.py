@@ -37,4 +37,4 @@ class Farnell():
         r = requests.get(self.base_url, params = params)
         if r.status_code != 200:
             raise Exception("Developer apiKey not active - contact Farnell representative to activate account for \'Product Search API: Standard' product - API key " + str(self.apiKey))
-        return r.__dict__['_content']
+        return r.json()
