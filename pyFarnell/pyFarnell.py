@@ -16,6 +16,7 @@ class Farnell():
             raise Exception("Contact Farnell representative to create an accout for \'Product Search API: Standard' product for you.")
 
         self.apiKey = apiKey
+        self.region = region
         self.base_url = 'https://api.element14.com/catalog/products'
 
     def get_part_by_number(self, partNum):
@@ -31,7 +32,7 @@ class Farnell():
         params = {
                    'callInfo.responseDataFormat': 'JSON',
                    'term': 'id:' + str(partNum),
-                   'storeInfo.id': 'sk.farnell.com',
+                   'storeInfo.id': self.region,
                    'callInfo.apiKey': self.apiKey,
                  }
         r = requests.get(self.base_url, params = params)
