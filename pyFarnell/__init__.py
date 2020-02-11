@@ -1,1 +1,1 @@
-from pyFarnell import *
+from .pyFarnell import Farnell
